@@ -1,6 +1,6 @@
 package common;
 
-public class Empleado extends Persona{
+public abstract class Empleado extends Persona{
 	String puesto;
 	double sueldo;
 	String id;
@@ -44,6 +44,7 @@ public class Empleado extends Persona{
 	public void trabajar() {
 		System.out.println("Estoy trabajando");
 	}
-
+	 
+	
 	
 }
