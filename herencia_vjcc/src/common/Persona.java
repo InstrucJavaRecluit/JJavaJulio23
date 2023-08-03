@@ -1,10 +1,18 @@
 package common;
 
-public class Persona {
+public final class Persona {
 
 	String nombre;
 	int edad;
 	String Sexo;
+	
+	public static final int MAXIMO_TIEMPO_VIDA = 120; //ES UNA CONSTANTE QUE NO CAMBIA
+	
+	
+	public static int getMaximoTiempoVida() {
+		return MAXIMO_TIEMPO_VIDA;
+	}
+
 	
 	public Persona() {
 		
@@ -47,8 +55,9 @@ public class Persona {
 		return "Persona [nombre=" + nombre + ", edad=" + edad + ", Sexo=" + Sexo + "]";
 	}
 	
-	public void AlgoPersona() {
-		System.out.println("Persona");
+	
+	public final void leer() {
+		System.out.println("leyendo de izquierda a derecha");
 	}
 	
 	

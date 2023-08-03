@@ -41,5 +41,8 @@ public class Empleado extends Persona {
 				+ ", Sexo=" + Sexo + "]";
 	}
 	
-	
+//	@Override
+//	public void leer() { 
+//		System.out.println("leyendo desde la clase empleado");
+//	}
 }
