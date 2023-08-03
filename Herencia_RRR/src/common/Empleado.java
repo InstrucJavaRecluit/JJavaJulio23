@@ -44,5 +44,8 @@ public class Empleado extends Persona {
 	public void mensaje() {
 		System.out.println("empleado trabajando");
 	}
-	
+	@Override
+	public void leer() {
+		System.out.println("leyendo desde la clase empleado");
+	}
 }

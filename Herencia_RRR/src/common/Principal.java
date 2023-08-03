@@ -6,8 +6,17 @@ public class Principal {
 	Empleado emp = new Empleado();
 	Gerente ger = new Gerente();
 	
+    p1.Imprimir();
+    emp.mensaje();
+    ger.mensaje2();
+    
+    
+    System.out.println(p1.MAXIMO_TIEMPO_VIDA);
+    
+    p1.leer();
+    emp.leer();
+    
 
-	ger.toString();
 	
 }
 }
