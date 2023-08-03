@@ -7,10 +7,14 @@ public class Principal {
 		Empleado emp = new Empleado();
 		Gerente ge = new Gerente();
 		
-		per.ImprimeDatos();
-		emp.puesto();
-		ge.mensaje();
+//		per.ImprimeDatos();
+//		emp.puesto();
+//		ge.mensaje();
 		
+		per.leer();
+		emp.leer();
+		System.out.println(per.MAXIMO_TIEMPO_VIDA);
+		//Persona.MAXIMO_TIEMPO_VIDA = 500;
 	}
 
 }

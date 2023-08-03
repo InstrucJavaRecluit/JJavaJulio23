@@ -1,11 +1,17 @@
 package common;
 
-public class Persona {
+public final class Persona {
 	
 	String nombre;
 	int edad;
 	String nacionalidad;
+	public static final int MAXIMO_TIEMPO_VIDA = 120;// CONSTANTE - VALOR QUE YA NO VA A CAMBIAR, SE LE TIENE QUE DAR UN VALOR.
 	
+	
+	public static int getMaximoTiempoVida() {
+		return MAXIMO_TIEMPO_VIDA;
+	}
+
 	public Persona() {
 		
 	}
@@ -40,14 +46,16 @@ public class Persona {
 	public void setNacionalidad(String nacionalidad) {
 		this.nacionalidad = nacionalidad;
 	}
+	
+	
 
 	@Override
 	public String toString() {
 		return "Persona [nombre=" + nombre + ", edad=" + edad + ", nacionalidad=" + nacionalidad + "]";
 	}
 	
-	public void ImprimeDatos() {
-		System.out.println("Hola, esta es la clase PERSONA");
+	public final void leer() {
+		System.out.println("Leyendo de izquierda a derecha");
 	}
 
 }

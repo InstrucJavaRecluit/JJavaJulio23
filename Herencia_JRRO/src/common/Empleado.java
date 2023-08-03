@@ -41,9 +41,9 @@ public class Empleado extends Persona{
 		this.sueldo = sueldo;
 	}
 	
-	
-	public void puesto() {
-		System.out.println("Hola, esta es la clase EMPLEADO");
+	@Override
+	public void leer() {
+		System.out.println("HLeyendo desde la clase empleado");
 	}
 	
 	
